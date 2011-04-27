@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="starting_repeating_task">Starting Repeating Task</string>
-    <string name="repeating_task_stopped">Repeating Task Stopped</string>
-    <string name="multi_alarm_is_firing">Multi alarm is firing</string>
     <string name="single_alarm_button_text">Single Alarm</string>
-    <string name="single_alarm_button_text_with_param">Single Alarm (resuming in %1$d seconds)</string>
     <string name="single_alarm_is_firing">Single Alarm is firing!!! Ka-chow!</string>
     <string name="one_shot_scheduled">One Shot Scheduled</string>
-    <string name="hello">Hello World, HelloAlarms!</string>
     <string name="app_name">HelloAlarms</string>
-    
-    <string name="time_till_single">%1$.1f seconds until single fires.</string>
-    <string name="time_till_multi">%1$.1f seconds until multi fires.</string>
-    <string name="multi_restarting">Restarting in %d seconds...</string>
-    <string name="multi_stopping">Stopping in %d seconds...</string>
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
 </resources>
