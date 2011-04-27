@@ -109,7 +109,6 @@ public class HelloAlarms extends Activity {
 	}
 	
 	private OnClickListener mSingleAlarmListener = new OnClickListener() {
-		@Override
 		public void onClick(View view) {
 			
 			mSingleButton.setEnabled(false);
@@ -147,7 +146,6 @@ public class HelloAlarms extends Activity {
 	};
 	
 	private OnClickListener mMultiAlarmStartListener = new OnClickListener() {
-		@Override
 		public void onClick(View view) {
 			// Allow the user to stop the multi alarm, but not start it again
 			mMultiStartButton.setEnabled(false);
@@ -180,7 +178,6 @@ public class HelloAlarms extends Activity {
 	};
 	
 	private OnClickListener mMultiAlarmStopListener = new OnClickListener() {
-		@Override
 		public void onClick(View view) {
 			Intent multiAlarmIntent = new Intent(HelloAlarms.this, MultiAlarm.class);
 			
@@ -203,7 +200,6 @@ public class HelloAlarms extends Activity {
 	};
 	
 	private Runnable mUpdateSingleTimerTask = new Runnable() {
-		@Override
 		public void run() {
 			long millis = SystemClock.uptimeMillis() + 100;
 			double displayTime = TIME_IN_SECONDS_FOR_SINGLE_ALARM - ((System.currentTimeMillis() - (mSingleStartTime + TIME_IN_SECONDS_FOR_SINGLE_ALARM)) / 1000.0);
@@ -228,7 +224,6 @@ public class HelloAlarms extends Activity {
 	};
 	
 	private Runnable mUpdateMultiTimerTask = new Runnable() {
-		@Override
 		public void run() {
 			long millis = SystemClock.uptimeMillis() + 100;
 			double displayTime = TIME_IN_SECONDS_FOR_MULTI_ALARM - ((SystemClock.elapsedRealtime() - (mMultiStartTime + TIME_IN_SECONDS_FOR_MULTI_ALARM)) / 1000.0);
